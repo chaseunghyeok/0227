@@ -1,0 +1,52 @@
+0227
+
+▶ jQuery
+
+$(function(){
+        $('#btn').click(function(){
+               var c = $('#numc').val();
+               alert('jQuery이벤트' + c);
+        });
+});
+
+on나오면 이벤트
+
+$(function(){
+        $('#btn').on('click',function(){ 코드기술 });
+});
+
+
+
+function mycal(x,y){ var hap = x + y; hap출력 }
+</script>
+
+
+<html>
+
+ <button id="btn"> 더하게 계신 </button>
+
+
+
+
+
+새로 jQuery 시작
+
+$(document).ready(function(){ 코드기술 });
+jQuery(document).ready(function(){ });
+
+$(document).ready(function(){
+      $('#btn2').clixk(function(){
+          var b = ('#numb').val();
+          alert(b);
+    });
+});
+
+
+
+
+https://jQuery.com
+ ㄴ 오렌지 UI 클릭 Widgets = 컴포넌트 = 컨트롤 = 대상
+         ㄴ Date
+
+05addClass477
+06removeClass

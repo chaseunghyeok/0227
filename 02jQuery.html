@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>02jQuery</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <style>
+    *{font-size: 14pt;}
+    
+  </style>
+  
+  <script>
+  // $(document).ready(function(){ code기술 클릭,datepicker(),slideToggle() });
+  $(document).ready(function(){
+    $('#btn1').click(function(){
+    $('#btn1').css('background','pink');
+    $('#btn1').css("border","2px solid salmon");
+    $('#btn1').css("height","40px");
+    $('#btn1').css("width","80px");
+    // $('#display').html('<h2>mybutton1</h2>');
+    $('#display').text('<h2>mybutton1</h2>');
+    // document.getElementById('display').innerText='<h2>mybutton1 click</h2>'
+    });//end1
+
+    $('#btn2_myspring').on('click',function(){
+    $(this).css('background','lightcyan');
+    $(this).css("border","2px solid skyblue");
+    $(this).css("height","40px");
+    $(this).css("width","80px");
+    // $('#display').text("mybutton2 click");
+    document.getElementById('display').innerHTML='<h2>mybutton2 click</h2>'
+    });//end2
+
+    $('#btn3').click(function(){
+    $('#btn3').css({
+      'background':'plum' ,
+      'border':'2px solid palevioletred' ,
+      'height' : '40px' ,
+      'width' : '80px' ,
+      'color' : 'maroon'
+      });
+    $('#display').text('<h2>mybutton3</h2>');
+    });//end3 
+
+
+    $('#btn4').click(function(){
+    $('#display').text('👨‍🦰display👩‍🦰🧓👴').css({
+      'background':'yellow',
+      'height':'40px',
+      'width':'80px'});
+    });//end4
+
+    $('#title').focus(function(){
+      $(this).css('background','lightgreen');
+    });//end focus
+
+    $('#title').blur(function(){
+      $(this).css('background','purple');
+    });//end blur
+  });//Gend
+  </script>
+</head>
+<body>
+
+  <h2>02jQuery.html</h2>
+  제목: <input type="text" name="title" id="title" placeholder="제목을 입력하세요"> <p></p>
+  <!-- 입력란 초점이 가면 focus, 초점이 뭉게지면 blur() -->
+  <!-- 버튼, 이미지는 click() -->
+
+  <input type="button" value="button1" id="btn1">
+  <input type="button" value="button2" id="btn2_myspring">
+  <input type="button" value="button3" id="btn3"> <br>
+  <input type="button" value="button4" id="btn4">
+  <input type="button" value="button5=load" onclick="location.reload()" id="btn5">
+  <p></p>
+
+  <div id="display"></div>
+</body>
+</html>
